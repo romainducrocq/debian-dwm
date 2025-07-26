@@ -29,7 +29,7 @@
   ```
   ```
   exit
-  su romain
+  exit
   ```
 
 3. install debian-dwm repo
@@ -40,7 +40,7 @@
   cd /opt
   sudo git clone https://github.com/romainducrocq/debian-dwm
   cd debian-dwm
-  sudo ./install.sh
+  ./install.sh
   ```
 
 4. start window manager
