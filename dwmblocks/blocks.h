@@ -2,7 +2,7 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 
-	{"", "echo \"$(cat /sys/class/power_supply/BAT1/status): $(cat /sys/class/power_supply/BAT1/capacity)%\"",	30,		0},
+	{" ", "echo \"$(cat /sys/class/power_supply/BAT1/status): $(cat /sys/class/power_supply/BAT1/capacity)%\"",	30,		0},
 
 	{"Disk: ", "df -h / | awk ' /[0-9]/ {print $3 \"/\" $2}'",	30,		0},
 
