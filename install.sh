@@ -26,8 +26,8 @@ mkdir -p ${HOME}/.config/rofi
 cp -v config.rasi ${HOME}/.config/rofi
 
 # enable services
-sudo systemctl --user enable pulseaudio.service
-sudo systemctl --user enable bluetooth.service
+systemctl --user enable pulseaudio.service
+sudo systemctl enable bluetooth.service
 
 # install dwm
 cd dwm-flexipack
