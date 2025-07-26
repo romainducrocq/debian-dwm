@@ -22,6 +22,8 @@ mkdir -p ${HOME}/.dwm
 cp -v autostart.sh ${HOME}/.dwm
 mkdir -p ${HOME}/.librewolf
 cp -v librewolf.overrides.cfg ${HOME}/.librewolf
+mkdir -p ${HOME}/.config/rofi
+cp -v config.rasi ${HOME}/.config/rofi
 
 # enable services
 sudo systemctl --user enable pulseaudio.service
