@@ -138,10 +138,12 @@ i  libnettle8 - low level cryptographic library (symmetric and one-way cryptos)
 i  libnewt0.52 - Not Erik's Windowing Toolkit - text mode windowing with slang
 i  libnftables1 - Netfilter nftables high level userspace API library
 i  libnftnl11 - Netfilter nftables userspace API library
+i  libnss-systemd - nss module providing dynamic user and group name resolution
 i  libp11-kit0 - library for loading and coordinating access to PKCS#11 modules - runtime
 i  libpam-modules - Pluggable Authentication Modules for PAM
 i  libpam-modules-bin - Pluggable Authentication Modules for PAM - helper binaries
 i  libpam-runtime - Runtime support for the PAM library
+i  libpam-systemd - system and service manager - PAM module
 i  libpam0g - Pluggable Authentication Modules library
 i  libpcre2-8-0 - New Perl Compatible Regular Expression Library- 8 bit runtime files
 i  libpopt0 - lib for parsing cmdline parameters
@@ -181,6 +183,7 @@ i  libxtables12 - netfilter xtables library
 i  libxxhash0 - shared library for xxhash
 i  libzstd1 - fast lossless compression algorithm
 i  linux-image-amd64 - Linux for 64-bit PCs (meta-package)
+i  lm-sensors - utilities to read temperature/voltage/fan sensors
 i  locales - GNU C Library: National Language (locale) data [support]
 i  login - system login tools
 i  logrotate - Log rotation utility
@@ -212,6 +215,7 @@ i  pciutils - PCI utilities
 i  perl - Larry Wall's Practical Extraction and Report Language
 i  perl-base - minimal Perl system
 i  picom - lightweight compositor for X11
+i  pipewire - audio and video processing engine multimedia server
 i  pipx - execute binaries from Python packages in isolated environments
 i  procps - /proc file system utilities
 i  pulseaudio - PulseAudio sound server
@@ -227,7 +231,10 @@ i  sharutils - shar, unshar, uuencode, uudecode
 i  shim-signed - Secure Boot chain-loading bootloader (Microsoft-signed binary)
 i  suckless-tools - simple commands for minimalistic window managers
 i  sudo - Provide limited super user privileges to specific users
+i  sysstat - system performance tools for Linux
 i  systemd - system and service manager
+i  systemd-sysv - system and service manager - SysV compatibility symlinks
+i  systemd-timesyncd - minimalistic service to synchronize local time with NTP servers
 i  sysvinit-utils - System-V-like utilities
 i  tar - GNU version of the tar archiving utility
 i  task-english - General English environment
@@ -235,6 +242,7 @@ i  task-laptop - laptop
 i  tasksel - tool for selecting tasks for installation on Debian systems
 i  tasksel-data - official tasks used for installation of Debian systems
 i  traceroute - Traces the route taken by packets over an IPv4/IPv6 network
+i  transmission-gtk - lightweight BitTorrent client (GTK+ interface)
 i  tree - displays an indented directory tree, in color
 i  tzdata - time zone and daylight-saving time data
 i  ucf - Update Configuration File(s): preserve user changes to config files
