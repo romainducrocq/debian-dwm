@@ -42,6 +42,7 @@
   sudo chown -R romain /opt/debian-dwm
   cd debian-dwm
   ./install.sh
+  sudo reboot
   ```
 
 4. start window manager
