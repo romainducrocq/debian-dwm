@@ -27,6 +27,10 @@
   ```
   romain  ALL=(ALL:ALL) ALL
   ```
+  ```
+  exit
+  su romain
+  ```
 
 3. install debian-dwm repo
   ```

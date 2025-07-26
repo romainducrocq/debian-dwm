@@ -32,6 +32,10 @@ cd dwm-flexipack
 sudo make clean install
 cd ..
 
+cd dwmblocks
+sudo make clean install
+cd ..
+
 # install st
 cd st
 sudo make clean install

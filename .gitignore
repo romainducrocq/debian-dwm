@@ -1,4 +1,6 @@
 /dwm-flexipack/*.o
 /dwm-flexipack/dwm
+/dwmblocks/*.o
+/dwmblocks/dwmblocks
 /st/*.o
 /st/st
