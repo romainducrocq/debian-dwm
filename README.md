@@ -3,7 +3,7 @@
   # burn debian iso on 1st usb
   sudo mkfs.vfat -F 32 -I /dev/sda
   wget -O debian.iso https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.11.0-amd64-netinst.iso
-  sudo dd if=/debian.iso of=/dev/sda bs=4M
+  sudo dd if=debian.iso of=/dev/sda bs=4M
 
   # get wifi firmware on 2nd usb
   sudo mkfs.vfat -F 32 -I /dev/sdb
@@ -34,11 +34,12 @@
 
 3. install debian-dwm repo
   ```
-  sudo apt-get install git
+  sudo apt-get install -y git
   git config --global user.email "romain.g.ducrocq@gmail.com"
   git config --global user.name "romain"
   cd /opt
   sudo git clone https://github.com/romainducrocq/debian-dwm
+  sudo chown -R romain /opt/debian-dwm
   cd debian-dwm
   ./install.sh
   ```
