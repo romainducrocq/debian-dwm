@@ -1,0 +1,8 @@
+[user]
+	email = romain.g.ducrocq@gmail.com
+	name = romainducrocq
+
+[alias]
+tree = log --graph --author-date-order --abbrev-commit --decorate --full-history --color --date=short --format=format:'%C(bold yellow)%d%C(reset) %C(red)%h%C(reset)%n'' - %C(bold green)%an%C(reset) %C(bold blue)(%ar)%C(reset) %C(cyan)%ah%C(reset)%n''          %C(white)%s%C(reset)'
+tree-branch = tree --first-parent
+tree-all = tree --all
