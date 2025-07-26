@@ -18,8 +18,8 @@ pipx ensurepath
 # install configs
 cp -v .xinitrc ${HOME}
 cp -v .gitcongif ${HOME}
-#mkdir -p ${HOME}/.dwm
-#cp -v autostart.sh ${HOME}/.dwm
+mkdir -p ${HOME}/.dwm
+cp -v autostart.sh ${HOME}/.dwm
 mkdir -p ${HOME}/.librewolf
 cp -v librewolf.overrides.cfg ${HOME}/.librewolf
 
