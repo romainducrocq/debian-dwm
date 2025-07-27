@@ -1,28 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-xset s off -dpms &
-nitrogen --restore &
-imwheel &
-numlockx &
-lxsession &
-#xfce4-power-manager --power manager &
-xrandr -s 1360x768
-xrdb .Xresources &
-
-while true; do
-	xsetroot -name "$(date)"
-
-	sleep 1
-done 
-
-
-
-
-
-
-
-
-
-
-
-
+dbus-launch & pulseaudio --start &
+feh --bg-scale /opt/debian-dwm/background/background.* &
+/opt/debian-dwm/dwmblocks/dwmblocks &
