@@ -1,5 +1,5 @@
-/dwm-flexipack/*.o
-/dwm-flexipack/dwm
+/dwm-flexipatch/*.o
+/dwm-flexipatch/dwm
 /dwmblocks/*.o
 /dwmblocks/dwmblocks
 /st/*.o
