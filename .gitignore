@@ -1,9 +1,13 @@
 /dwm-flexipatch/*.o
 /dwm-flexipatch/dwm
+/dwm-flexipatch/config.h
+/dwm-flexipatch/patches.h
 /dwmblocks/*.o
 /dwmblocks/dwmblocks
 /st-flexipatch/*.o
 /st-flexipatch/st
+/st-flexipatch/config.h
+/st-flexipatch/patches.h
 
 /dwm.bak/*.o
 /dwm.bak/dwm
