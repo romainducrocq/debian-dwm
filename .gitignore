@@ -2,5 +2,5 @@
 /dwm-flexipatch/dwm
 /dwmblocks/*.o
 /dwmblocks/dwmblocks
-/st/*.o
-/st/st
+/st-flexipatch/*.o
+/st-flexipatch/st
