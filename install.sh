@@ -30,7 +30,7 @@ systemctl --user enable pulseaudio.service
 sudo systemctl enable bluetooth.service
 
 # install dwm
-cd dwm-flexipack
+cd dwm-flexipatch
 sudo make clean install
 cd ..
 
@@ -39,6 +39,6 @@ sudo make clean install
 cd ..
 
 # install st
-cd st
+cd st-flexipatch
 sudo make clean install
 cd ..

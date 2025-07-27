@@ -1,1 +1,1 @@
-exec /opt/debian-dwm/dwm-flexipack/dwm
+exec /opt/debian-dwm/dwm-flexipatch/dwm
