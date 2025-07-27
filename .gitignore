@@ -4,3 +4,8 @@
 /dwmblocks/dwmblocks
 /st-flexipatch/*.o
 /st-flexipatch/st
+
+/dwm.bak/*.o
+/dwm.bak/dwm
+/st.bak/*.o
+/st.bak/st
