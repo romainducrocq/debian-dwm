@@ -4,6 +4,7 @@
 /dwm-flexipatch/patches.h
 /dwmblocks/*.o
 /dwmblocks/dwmblocks
+/dwmblocks/blocks.h
 /st-flexipatch/*.o
 /st-flexipatch/st
 /st-flexipatch/config.h
