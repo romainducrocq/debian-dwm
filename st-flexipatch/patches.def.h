@@ -207,8 +207,7 @@
  * which matches the default xterm behavior.
  * https://st.suckless.org/patches/fullscreen/
  */
-// TODO
-#define FULLSCREEN_PATCH 0
+#define FULLSCREEN_PATCH 1
 
 /* Hide the X cursor whenever a key is pressed and show it back when the mouse is moved in
  * the terminal window.
@@ -372,7 +371,6 @@
  * This variant depends on SCROLLBACK_PATCH being enabled.
  * https://st.suckless.org/patches/scrollback/
  */
-// TODO
 #define SCROLLBACK_MOUSE_ALTSCREEN_PATCH 0
 
 /* This patch adds the two color-settings selectionfg and selectionbg to config.def.h.
@@ -467,7 +465,6 @@
  * scroll program.
  * https://st.suckless.org/patches/universcroll/
  */
-// TODO
 #define UNIVERSCROLL_PATCH 0
 
 /* Use XftFontMatch in place of FcFontMatch.
