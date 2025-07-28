@@ -465,13 +465,14 @@
 
 /*
  * Uses rofi to switch between all windows with alt-tab, tags+clients.
+ * ALT_TAB_PATCH has precedence.
  *
  * The patch depends on rofi window switcher.
  *
  * Debian:
  *     sudo apt install rofi
  */
-#define ALT_TAB_ROFI_PATCH 1
+#define ALT_TAB_ROFI_PATCH 0
 
 /* All floating windows are centered, like the center patch, but without a rule.
  * The center patch takes precedence over this patch.

@@ -1,7 +1,6 @@
-- fix SWALLOW_PATCH
-- change alt+a/e to not clobber in terminal
-- use ALT_TAB_PATCH with VIEW_HISTORY_PATCH in addition to rofi ? on another kb
-- add tapping touchpad
-- add systray with wifi/bluetooth/volume/brightness
-- find minimal list of packages needed
+- [ ] fix SWALLOW_PATCH
+- [ ] change alt+a/e to not clobber in terminal
+- [ ] add tapping touchpad
+- [ ] add systray with wifi/bluetooth/volume/brightness
+- [ ] find minimal list of packages needed
 
