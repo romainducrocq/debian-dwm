@@ -1363,7 +1363,7 @@
  * https://github.com/bakkeby/patches/wiki/togglelayout
  */
 
-#define TOGGLELAYOUT_PATCH 1
+#define TOGGLELAYOUT_PATCH 0
 
 /* Minor patch that lets you use the same keyboard shortcut to toggle to the previous tag if the
  * designated tag is already active.
