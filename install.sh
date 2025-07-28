@@ -11,15 +11,9 @@ sudo apt-get update
 # install packages
 sudo apt-get install -y $(cat aptitude.search | cut -d" " -f3 | tr '\n' ' ')
 
-#install pywal16
-pipx install pywal16
-pipx ensurepath
-
 # install configs
 cp -v .xinitrc ${HOME}
 cp -v .gitconfig ${HOME}
-#mkdir -p ${HOME}/.dwm
-#cp -v autostart.sh ${HOME}/.dwm
 mkdir -p ${HOME}/.librewolf
 cp -v librewolf.overrides.cfg ${HOME}/.librewolf
 mkdir -p ${HOME}/.config/rofi
@@ -44,5 +38,5 @@ cd ..
 
 # install st
 cd st-flexipatch
-sudo make clean install
+sudo ./build.sh
 cd ..
