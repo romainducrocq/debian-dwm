@@ -10,13 +10,14 @@ sudo apt-get update
 
 # install packages
 sudo apt-get install -y gcc make wget xorg \
-   libx11-dev libxft-dev libxinerama-dev sharutils x11-xserver-utils \
-   libxcb1-dev libx11-xcb-dev libxcb-res0-dev libharfbuzz-dev \
-   dmenu feh picom rofi slock xclip \
-   dbus dbus-x11 \
-   alsa-tools pulseaudio pavucontrol pulseaudio-module-bluetooth \
-   extrepo librewolf \
-   bat nano neofetch tar tree unzip
+    libx11-dev libxft-dev libxinerama-dev sharutils x11-xserver-utils \
+    libxcb1-dev libx11-xcb-dev libxcb-res0-dev libharfbuzz-dev \
+    dmenu feh picom rofi slock xclip \
+    dbus dbus-x11 \
+    alsa-tools pulseaudio pavucontrol pulseaudio-module-bluetooth \
+    network-manager network-manager-gnome \
+    extrepo librewolf \
+    bat nano neofetch tar tree unzip
 
 # install configs
 cp -v .xinitrc ${HOME}
@@ -48,4 +49,5 @@ cd ..
 
 # enable services
 systemctl --user enable pulseaudio.service
+sudo systemctl enable NetworkManager.service
 # sudo systemctl enable bluetooth.service

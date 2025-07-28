@@ -8,7 +8,7 @@ static const Block blocks[] = {
 
 	{"Mem: ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		19},
 
-	{"", "date '+%b %d (%a) %I:%M%p'",					5,		20},
+	{"", "date '+%b %d (%a) %I:%M%p |'",					5,		20},
 };
 
 //sets delimiter between status commands. NULL character ('\0') means no delimiter.
