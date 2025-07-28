@@ -10,6 +10,7 @@ alt+tab          switch window with rofi
 [st]
 alt+shift+enter  launch terminal at cwd
 ctrl+shift+j/k   increase/decrease font size
+ctrl+shift+o/p   increase/decrease alpha
 alt+c/v          copy/paste mouse selection
 
 [Navigation]
