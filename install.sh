@@ -19,7 +19,7 @@ mkdir -p ${HOME}/.librewolf
 cp -v librewolf.overrides.cfg ${HOME}/.librewolf
 mkdir -p ${HOME}/.config/rofi
 cp -v config.rasi ${HOME}/.config/rofi
-echo "export PATH=\"$PATH:/opt/bin\"" > ~/.bashrc
+echo "export PATH=\"$PATH:/opt/bin\"" >> ~/.bashrc
 
 # install fonts
 sudo cp -rv fonts/Iosevka /usr/share/fonts
