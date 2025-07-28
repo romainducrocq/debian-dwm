@@ -9,7 +9,8 @@ sudo extrepo enable librewolf
 sudo apt-get update
 
 # install packages
-sudo apt-get install -y $(cat aptitude.search | cut -d" " -f3 | tr '\n' ' ')
+# sudo apt-get install -y $(cat aptitude.search | cut -d" " -f3 | tr '\n' ' ')
+./install_packages.sh
 
 # install configs
 cp -v .xinitrc ${HOME}
@@ -19,10 +20,6 @@ cp -v librewolf.overrides.cfg ${HOME}/.librewolf
 mkdir -p ${HOME}/.config/rofi
 cp -v config.rasi ${HOME}/.config/rofi
 echo "export PATH=\"$PATH:/opt/bin\"" > ~/.bashrc
-
-# enable services
-systemctl --user enable pulseaudio.service
-sudo systemctl enable bluetooth.service
 
 # install fonts
 sudo cp -rv fonts/iosevka /usr/share/fonts
@@ -41,3 +38,7 @@ cd ..
 cd st-flexipatch
 sudo ./build.sh
 cd ..
+
+# enable services
+systemctl --user enable pulseaudio.service
+# sudo systemctl enable bluetooth.service

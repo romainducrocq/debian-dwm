@@ -9,7 +9,7 @@ alt+h/l           increase/decrease master size
 alt+tab           switch to previous tag
                   (or switch window with rofi)
 
-[st]
+[St]
 alt+shift+enter  launch terminal at cwd
 ctrl+shift+j/k   increase/decrease font size
 ctrl+shift+o/p   increase/decrease alpha
