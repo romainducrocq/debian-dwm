@@ -1,5 +1,4 @@
 - [ ] fix SWALLOW_PATCH
-- [ ] change alt+a/e to not clobber in terminal
 - [ ] add tapping touchpad
 - [ ] add systray with wifi/bluetooth/volume/brightness
 - [ ] find minimal list of packages needed

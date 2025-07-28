@@ -1,11 +1,13 @@
 [Basic]
-alt+p            launch dmenu
-alt+b            show/hide statusbar
-alt+enter        push active window to master
-(change) alt+j/k          focus next/previous in current tag
-alt+s            focus master and back
-alt+h/l          increase/decrease master size
-alt+tab          switch window with rofi
+alt+p             launch dmenu
+alt+b             show/hide statusbar
+alt+enter         push active window to master
+alt+j/k           focus next/previous in current tag
+alt+arrow         =
+alt+s             focus master and back
+alt+h/l           increase/decrease master size
+alt+tab           switch to previous tag
+                  (or switch window with rofi)
 
 [st]
 alt+shift+enter  launch terminal at cwd
@@ -14,15 +16,17 @@ ctrl+shift+o/p   increase/decrease alpha
 alt+c/v          copy/paste mouse selection
 
 [Navigation]
-alt+i          move focus to tag i
-alt+shift+i    move active window to tag i
-alt+i/d        increase/decrease number of windows in master
-alt+,/.        move focus to other screen
-alt+shift+,/.  move active window to other screen
-alt+0          view all windows on screen
-alt+shift+0    make focused window sticky
-alt+shift+c    kill active window
-alt+shift+q    quit dwm
+alt+i           move focus to tag i
+alt+shift+i     move active window to tag i
+alt+i/d         increase/decrease number of windows in master
+alt+,/.         move focus to other screen
+alt+shift+,/.   move active window to other screen
+alt+w/e/a/z     move focus on master/1st/2nd/last
+alt+ctrl+e/a/z  push 1st/2nd/last to master
+alt+0           view all windows on screen
+alt+shift+0     make focused window sticky
+alt+shift+c     kill active window
+alt+shift+q     quit dwm
 
 [Layout]
 alt+t  tiled mode
