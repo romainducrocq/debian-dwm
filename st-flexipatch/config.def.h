@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "IosevkaNerdFontMono:pixelsize=18:antialias=true:autohint=true";
 #if FONT2_PATCH
 /* Spare fonts */
 static char *font2[] = {
@@ -46,7 +46,7 @@ static char *url_opener = "xdg-open";
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/bash";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -186,33 +186,34 @@ char *xdndescchar = " !\"#$&'()*;<>?[\\]^`{|}~";
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+// Nord Color Scheme
+        /* 8 normal colors */
+        "#3b4252", /* black   */
+        "#bf616a", /* red     */
+        "#a3be8c", /* green   */
+        "#ebcb8b", /* yellow  */
+        "#81a1c1", /* blue    */
+        "#b48ead", /* magenta */
+        "#88c0d0", /* cyan    */
+        "#e5e9f0", /* white   */
 
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+        /* 8 bright colors */
+        "#4c566a", /* black   */
+        "#bf616a", /* red     */
+        "#a3be8c", /* green   */
+        "#ebcb8b", /* yellow  */
+        "#81a1c1", /* blue    */
+        "#b48ead", /* magenta */
+        "#8fbcbb", /* cyan    */
+        "#eceff4", /* white   */
 
-	[255] = 0,
+        [255] = 0,
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#add8e6", /* 256 -> cursor */
-	"#555555", /* 257 -> rev cursor*/
-	"#000000", /* 258 -> bg */
-	"#e5e5e5", /* 259 -> fg */
+        /* more colors can be added after 255 to use with DefaultXX */
+        "#add8e6", /* 256 -> cursor */
+        "#555555", /* 257 -> rev cursor*/
+        "#81a1c1", /* default foreground colour */
+        "#2e3440", /* default background colour */
 };
 
 
@@ -266,7 +267,7 @@ static Rune stcursor = 0x2603; /* snowman (U+2603) */
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 6;
 #endif // BLINKING_CURSOR_PATCH
 
 /*
@@ -405,12 +406,12 @@ static MouseShortcut mshortcuts[] = {
 #define TERMMOD (ControlMask|ShiftMask)
 
 #if EXTERNALPIPE_PATCH // example command
-static char *openurlcmd[] = { "/bin/sh", "-c",
+static char *openurlcmd[] = { "/bin/bash", "-c",
 	"xurls | dmenu -l 10 -w $WINDOWID | xargs -r open",
 	"externalpipe", NULL };
 
 #if EXTERNALPIPEIN_PATCH // example command
-static char *setbgcolorcmd[] = { "/bin/sh", "-c",
+static char *setbgcolorcmd[] = { "/bin/bash", "-c",
 	"printf '\033]11;#008000\007'",
 	"externalpipein", NULL };
 #endif // EXTERNALPIPEIN_PATCH
@@ -422,11 +423,11 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,   {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,     {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,        {.i =  0} },
-	{ TERMMOD,              XK_Prior,       zoom,            {.f = +1} },
-	{ TERMMOD,              XK_Next,        zoom,            {.f = -1} },
+	{ TERMMOD,              XK_K,           zoom,            {.f = +1} },
+	{ TERMMOD,              XK_J,           zoom,            {.f = -1} },
 	{ TERMMOD,              XK_Home,        zoomreset,       {.f =  0} },
-	{ TERMMOD,              XK_C,           clipcopy,        {.i =  0} },
-	{ TERMMOD,              XK_V,           clippaste,       {.i =  0} },
+	{ TERMMOD,              XK_c,           clipcopy,        {.i =  0} },
+	{ TERMMOD,              XK_v,           clippaste,       {.i =  0} },
 	#if ALPHA_PATCH
 	{ TERMMOD,              XK_O,           changealpha,     {.f = +0.05} },
 	{ TERMMOD,              XK_P,           changealpha,     {.f = -0.05} },
