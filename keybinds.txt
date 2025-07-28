@@ -33,5 +33,4 @@ alt+m  monocle mode
 alt+RMB          resize floating window with mouse
 alt+LMB          move floating window around
 alt+space        toggle to previous layout
-alt+shift+space  make an individual window float
-alt+MMB          make an individual window unfloat
+alt+shift+space  make an individual window (un)float
