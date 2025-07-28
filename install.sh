@@ -25,6 +25,7 @@ mkdir -p ${HOME}/.librewolf
 cp -v librewolf.overrides.cfg ${HOME}/.librewolf
 mkdir -p ${HOME}/.config/rofi
 cp -v config.rasi ${HOME}/.config/rofi
+sudo cp -v 30-touchpad.conf /etc/X11/xorg.conf.d
 echo "export PATH=\"$PATH:/opt/bin\"" >> ~/.bashrc
 
 # install fonts
