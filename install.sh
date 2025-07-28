@@ -22,21 +22,21 @@ cp -v config.rasi ${HOME}/.config/rofi
 echo "export PATH=\"$PATH:/opt/bin\"" > ~/.bashrc
 
 # install fonts
-sudo cp -rv fonts/iosevka /usr/share/fonts
+sudo cp -rv fonts/Iosevka /usr/share/fonts
 fc-cache -fv
 
 # install dwm
 cd dwm-flexipatch
-sudo ./build.sh
+./build.sh
 cd ..
 
 cd dwmblocks
-sudo ./build.sh
+./build.sh
 cd ..
 
 # install st
 cd st-flexipatch
-sudo ./build.sh
+./build.sh
 cd ..
 
 # enable services
