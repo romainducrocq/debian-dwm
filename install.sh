@@ -29,13 +29,17 @@ cp -v config.rasi ${HOME}/.config/rofi
 systemctl --user enable pulseaudio.service
 sudo systemctl enable bluetooth.service
 
+# install fonts
+sudo cp -rv fonts/iosevka /usr/share/fonts
+fc-cache -fv
+
 # install dwm
 cd dwm-flexipatch
-sudo make clean install
+sudo ./build.sh
 cd ..
 
 cd dwmblocks
-sudo make clean install
+sudo ./build.sh
 cd ..
 
 # install st
