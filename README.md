@@ -50,7 +50,11 @@
    startx
    ```
 
-5. configure librewolf
+5. configure pavucontrol
+  - unmute Playback, Input Devices, Output Devices
+  - Configuration > Analog Stereo Duplex
+
+6. configure librewolf
   - Settings > [ ] Delete cookies and site data when LibreWolf is closed
   - Settings > [x] Remember browsing and download history
   - Settings > [x] Remember search and form history
