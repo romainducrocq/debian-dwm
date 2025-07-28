@@ -1153,8 +1153,10 @@ static const Key keys[] = {
 	#endif // VANITYGAPS_PATCH
 	#if ALT_TAB_PATCH
 	{ Mod1Mask,                     XK_Tab,        alttabstart,            {0} },
+	#elif ALT_TAB_ROFI_PATCH
+        { MODKEY,                      XK_Tab,        spawn,                  SHCMD("rofi -show window -kb-row-down 'Alt+Tab' -kb-accept-entry '!Alt_L,!Alt+Tab'") },
 	#else
-	{ MODKEY,                       XK_Tab,        view,                   {0} },
+        { MODKEY,                      XK_Tab,        view,                   {0} },
 	#endif // ALT_TAB_PATCH
 	#if SHIFTTAG_PATCH
 	{ MODKEY|ShiftMask,             XK_Left,       shifttag,               { .i = -1 } }, // note keybinding conflict with focusadjacenttag tagtoleft

@@ -461,8 +461,17 @@
 /* Adds a window task switcher toggled using alt-tab.
  * https://dwm.suckless.org/patches/alt-tab/
  */
-// TODO
 #define ALT_TAB_PATCH 0
+
+/*
+ * Uses rofi to switch between all windows with alt-tab, tags+clients.
+ *
+ * The patch depends on rofi window switcher.
+ *
+ * Debian:
+ *     sudo apt install rofi
+ */
+#define ALT_TAB_ROFI_PATCH 1
 
 /* All floating windows are centered, like the center patch, but without a rule.
  * The center patch takes precedence over this patch.
@@ -744,7 +753,7 @@
  * the urgency bit on the named window. This patch activates the window instead.
  * https://dwm.suckless.org/patches/focusonnetactive/
  */
-#define FOCUSONNETACTIVE_PATCH 0
+#define FOCUSONNETACTIVE_PATCH 1
 
 /* Send "fake signals" to dwm for handling, using xsetroot. This will not conflict with the
  * status bar, which also is managed using xsetroot.
@@ -1425,7 +1434,6 @@
  * the number of tags in the system.
  */
 #define VIEW_HISTORY_PATCH 0
-// TODO
 
 /* Follow a window to the tag it is being moved to.
  * https://dwm.suckless.org/patches/viewontag/
