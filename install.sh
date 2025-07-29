@@ -53,5 +53,5 @@ sudo systemctl enable NetworkManager.service
 sudo systemctl enable wpa_supplicant.service
 sudo systemctl start NetworkManager.service
 sudo systemctl start wpa_supplicant.service
-sudo Networkmanager
+sudo NetworkManager
 # sudo systemctl enable bluetooth.service
