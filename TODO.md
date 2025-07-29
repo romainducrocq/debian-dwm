@@ -1,2 +1,2 @@
 - [ ] fix SWALLOW_PATCH
-- [ ] add bluetooth, maybe with systray
+- [ ] fix RESIZECORNERS_PATCH
