@@ -7,7 +7,7 @@ sudo apt-get install -y gcc make wget xorg \
     libx11-dev libxft-dev libxinerama-dev sharutils x11-xserver-utils \
     libxcb1-dev libx11-xcb-dev libxcb-res0-dev libharfbuzz-dev \
     dbus dbus-x11 dmenu feh picom rofi slock xclip \
-    alsa-tools pulseaudio pavucontrol pulseaudio-module-bluetooth pasystray \
+    alsa-tools alsa-utils pulseaudio pavucontrol pulseaudio-module-bluetooth pasystray \
     wpasupplicant wireless-tools network-manager network-manager-gnome gnome-keyring \
     bat nano neofetch tar tree unzip
 

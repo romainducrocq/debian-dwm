@@ -1,5 +1,9 @@
 /* See LICENSE file for copyright and license details. */
 
+#if VOLUMECTL_PATCH
+#include <X11/XF86keysym.h>
+#endif
+
 /* Helper macros for spawning commands */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/bash", "-c", cmd, NULL } }
 #define CMD(...)   { .v = (const char*[]){ __VA_ARGS__, NULL } }
@@ -898,6 +902,11 @@ static const char *dmenucmd[] = {
 	NULL
 };
 static const char *termcmd[]  = { "st", NULL };
+#if VOLUMECTL_PATCH
+static const char *togglemutecmd[] = { "amixer", "-D", "pulse", "sset", "Master", "toggle", NULL };
+static const char *volumeup[] = { "amixer", "-D", "pulse", "sset", "Master", "5%+", NULL };
+static const char *volumedown[] = { "amixer", "-D", "pulse", "sset", "Master", "5%-", NULL };
+#endif
 
 #if BAR_STATUSCMD_PATCH
 #if BAR_DWMBLOCKS_PATCH
@@ -1027,6 +1036,11 @@ ResourcePref resources[] = {
 
 static const Key keys[] = {
 	/* modifier                     key            function                argument */
+        #if VOLUMECTL_PATCH
+        { 0,              XF86XK_AudioMute,            spawn,                  {.v = togglemutecmd } },
+        { 0,              XF86XK_AudioRaiseVolume,     spawn,                  {.v = volumeup } },
+        { 0,              XF86XK_AudioLowerVolume,     spawn,                  {.v = volumedown } },
+        #endif
 	#if KEYMODES_PATCH
 	{ MODKEY,                       XK_Escape,     setkeymode,             {.ui = COMMANDMODE} },
 	#endif // KEYMODES_PATCH

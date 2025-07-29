@@ -1441,6 +1441,14 @@
  */
 #define VIEWONTAG_PATCH 0
 
+/* Sets keybinds for volume control with amixer.
+ * The patch depends on alsa sound tools and utilities.
+ *
+ * Debian:
+ *     sudo apt install alsa-tools alsa-utils
+ */
+#define VOLUMECTL_PATCH 1
+
 /* This patch warps the mouse cursor to the center of the currently focused window or screen
  * when the mouse cursor is (a) on a different screen or (b) on top of a different window.
  * https://dwm.suckless.org/patches/warp/
