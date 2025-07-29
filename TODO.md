@@ -1,5 +1,2 @@
 - [ ] fix SWALLOW_PATCH
 - [ ] fix RESIZECORNERS_PATCH
-- [ ] configure slock
-- [ ] build dmenu from sources?
-- [ ] build slock from sources?
