@@ -3,13 +3,12 @@ sudo apt-get update
 sudo apt-get upgrade -y
 
 # install packages
-sudo apt-get install -y gcc make wget xorg \
-    libx11-dev libxft-dev libxinerama-dev sharutils x11-xserver-utils \
+sudo apt-get install -y bat gcc make nano neofetch tar tree unzip wget \
+    libx11-dev libxft-dev libxinerama-dev sharutils x11-xserver-utils xorg \
     libxcb1-dev libx11-xcb-dev libxcb-res0-dev libharfbuzz-dev \
-    dbus dbus-x11 dmenu feh picom rofi slock xclip \
+    brightnessctl dbus dbus-x11 dmenu feh picom rofi slock xclip zip \
     alsa-tools alsa-utils pulseaudio pavucontrol pulseaudio-module-bluetooth pasystray \
-    wpasupplicant wireless-tools network-manager network-manager-gnome gnome-keyring \
-    bat nano neofetch tar tree unzip
+    wpasupplicant wireless-tools network-manager network-manager-gnome gnome-keyring
 
 # install librewolf
 sudo apt-get update

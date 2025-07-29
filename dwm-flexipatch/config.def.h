@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
-#if VOLUMECTL_PATCH
+#if BRIGHTNESSCTL_PATCH || VOLUMECTL_PATCH
 #include <X11/XF86keysym.h>
 #endif
 
@@ -902,6 +902,10 @@ static const char *dmenucmd[] = {
 	NULL
 };
 static const char *termcmd[]  = { "st", NULL };
+#if BRIGHTNESSCTL_PATCH
+static const char *brightnessupcmd[] = { "brightnessctl", "set", "10%+", NULL };
+static const char *brightnessdowncmd[] = { "brightnessctl", "set", "10%-", NULL };
+#endif
 #if VOLUMECTL_PATCH
 static const char *togglemutecmd[] = { "amixer", "-D", "pulse", "sset", "Master", "toggle", NULL };
 static const char *volumeup[] = { "amixer", "-D", "pulse", "sset", "Master", "5%+", NULL };
@@ -1036,6 +1040,10 @@ ResourcePref resources[] = {
 
 static const Key keys[] = {
 	/* modifier                     key            function                argument */
+        #if BRIGHTNESSCTL_PATCH
+        { 0,              XF86XK_MonBrightnessUp,      spawn,                  {.v = brightnessupcmd } },
+        { 0,              XF86XK_MonBrightnessDown,    spawn,                  {.v = brightnessdowncmd } },
+       #endif
         #if VOLUMECTL_PATCH
         { 0,              XF86XK_AudioMute,            spawn,                  {.v = togglemutecmd } },
         { 0,              XF86XK_AudioRaiseVolume,     spawn,                  {.v = volumeup } },

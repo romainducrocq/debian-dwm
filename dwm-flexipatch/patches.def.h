@@ -568,6 +568,14 @@
  */
 #define BORDER_RULE_PATCH 0
 
+/* Sets keybinds for brightness control with brightnessctl.
+ * The patch depends on brightnessctl package.
+ *
+ * Debian:
+ *     sudo apt install brightnessctl
+ */
+#define BRIGHTNESSCTL_PATCH 1
+
 /* This patch adds an iscentered rule to automatically center clients on the current monitor.
  * This patch takes precedence over centeredwindowname, alwayscenter and fancybar patches.
  * https://dwm.suckless.org/patches/center/
