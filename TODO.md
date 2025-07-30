@@ -1,2 +1,1 @@
 - [ ] fix SWALLOW_PATCH
-- [ ] fix RESIZECORNERS_PATCH
