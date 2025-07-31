@@ -36,7 +36,7 @@
   ```
   sudo apt-get install -y git
   git config --global user.email "romain.g.ducrocq@gmail.com"
-  git config --global user.name "romain"
+  git config --global user.name "romainducrocq"
   cd /opt
   sudo git clone https://github.com/romainducrocq/debian-dwm
   sudo chown -R romain /opt/debian-dwm
